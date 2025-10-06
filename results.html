@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Pet Recommendations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-3xl bg-white p-8 rounded-xl shadow-lg text-center">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Your Top 3 Matches!</h1>
+        
+        <div class="space-y-6 mt-8">
+            <!-- This is a Jinja2 for loop. It will loop through the pet data we passed from Flask -->
+            {% for pet in pets %}
+            <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 text-left transform hover:scale-105 transition duration-300">
+                <h2 class="text-2xl font-bold text-blue-600">{{ pet.pet_name }}</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-gray-700">
+                    <div><strong>Type:</strong> {{ pet.pet_type }}</div>
+                    <div><strong>Size:</strong> {{ pet.size }}</div>
+                    <div><strong>Lifespan:</strong> {{ pet.avg_lifespan_years }} years</div>
+                    <div><strong>Monthly Cost:</strong> £{{ pet.avg_monthly_cost }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="mt-8">
+            <a href="/" class="text-blue-600 hover:underline">← Go back and try again</a>
+        </div>
+    </div>
+</body>
+</html>
