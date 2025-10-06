@@ -1,4 +1,4 @@
-Pet Recommender AI
+##Pet Recommender AI
 Project Description
 Pet Recommender AI is a data-driven application designed to help prospective pet owners find the perfect animal companion based on their lifestyle, personality, and living situation. By answering a short questionnaire, users receive a personalized recommendation of pet species that are a great match for them.
 
