@@ -1,0 +1,21 @@
+pet_name,pet_type,size,energy_level,grooming_needs,good_with_kids,apartment_friendly,training_difficulty,time_alone_tolerance,avg_monthly_cost,avg_lifespan_years
+Golden Retriever,Dog,Large,High,High,Yes,No,Easy,Medium,120,11
+French Bulldog,Dog,Small,Low,Low,Yes,Yes,Medium,Low,90,11
+German Shepherd,Dog,Large,High,Medium,Yes,No,Easy,High,130,10
+Siamese Cat,Cat,Medium,High,Low,No,Yes,Medium,Medium,70,16
+Maine Coon,Cat,Large,Medium,High,Yes,Yes,Medium,High,85,13
+British Shorthair,Cat,Medium,Low,Low,Yes,Yes,Easy,High,75,15
+Syrian Hamster,Rodent,Small,Medium,Low,No,Yes,Hard,High,20,2
+Goldfish,Fish,Small,Low,Low,Yes,Yes,N/A,High,10,10
+Bearded Dragon,Reptile,Medium,Low,Low,Yes,Yes,N/A,High,50,9
+Parakeet,Bird,Small,Medium,Low,No,Yes,Hard,Medium,25,8
+Basset Hound,Dog,Medium,Low,Medium,Yes,Yes,Hard,Low,100,11
+Poodle (Standard),Dog,Large,High,High,Yes,Yes,Easy,Low,140,13
+Labrador Retriever,Dog,Large,High,Medium,Yes,No,Easy,Medium,125,12
+Beagle,Dog,Medium,High,Low,Yes,Yes,Hard,Low,95,13
+Ragdoll,Cat,Large,Low,High,Yes,Yes,Easy,Medium,80,15
+Bengal Cat,Cat,Medium,High,Low,No,Yes,Hard,High,90,14
+Netherland Dwarf Rabbit,Rabbit,Small,Medium,Medium,No,Yes,Medium,Medium,40,9
+Ferret,Mammal,Small,High,Low,No,Yes,Hard,Low,55,8
+Corn Snake,Reptile,Medium,Low,Low,Yes,Yes,N/A,High,30,18
+Cavalier King Charles Spaniel,Dog,Small,Medium,Medium,Yes,Yes,Easy,Low,110,12
