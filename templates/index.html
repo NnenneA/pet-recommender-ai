@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Match Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .quiz-label { font-weight: 500; margin-bottom: 0.5rem; display: block; }
+        .quiz-select { width: 100%; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid #D1D5DB; }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-2xl bg-white p-8 rounded-xl shadow-lg">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-2">Find Your Perfect Pet</h1>
+        <p class="text-center text-gray-600 mb-8">Answer a few questions about your lifestyle to get started.</p>
+        
+        <form action="/recommend" method="POST">
+            <div class="space-y-6">
+                <!-- Question 1: Apartment -->
+                <div>
+                    <label class="quiz-label" for="apartment_friendly">Do you live in an apartment?</label>
+                    <select name="apartment_friendly" id="apartment_friendly" class="quiz-select">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <!-- Question 2: Energy Level -->
+                <div>
+                    <label class="quiz-label" for="energy_level">What is your desired energy level for a pet?</label>
+                    <select name="energy_level" id="energy_level" class="quiz-select">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+
+                <!-- Question 3: Kids -->
+                <div>
+                    <label class="quiz-label" for="good_with_kids">Do you have or expect children in your home?</label>
+                    <select name="good_with_kids" id="good_with_kids" class="quiz-select">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <!-- Question 4: Time Alone -->
+                <div>
+                    <label class="quiz-label" for="time_alone_tolerance">How long will the pet be alone on most days?</label>
+                    <select name="time_alone_tolerance" id="time_alone_tolerance" class="quiz-select">
+                        <option value="Low">Not long (Low tolerance needed)</option>
+                        <option value="Medium">A few hours (Medium tolerance needed)</option>
+                        <option value="High">Most of the day (High tolerance needed)</option>
+                    </select>
+                </div>
+
+                <!-- Question 5: Grooming -->
+                <div>
+                    <label class="quiz-label" for="grooming_needs">How much grooming are you willing to do?</label>
+                    <select name="grooming_needs" id="grooming_needs" class="quiz-select">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mt-8 text-center">
+                <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                    Find My Match!
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
